@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    display: inline;  /* used to display the list items in one line */
+    padding: 10px;   /* 10px space with boundries; */
+}
+
+ul a{
+    text-decoration: none; /* To remove underline */
+    color: red;
+}
+
+ul a:hover{ /* hover means when we place the mouse point on the link then underline appears and size and color also can be changed */
+    text-decoration: underline;
+    font-size: 20px;
+    color: green;
+}
+
+
+

@@ -1,0 +1,12 @@
+request contain --> header and body
+header contain --> ip, request type, mime type, request method (get, post, put, patch(only part to update), delete) 
+body contain --> empty
+
+http has 80 as default post which web sever listens continiously
+index.html is the default page every website should return;
+
+Response --> header and body
+header --> content type/mime type, **responce status code, coockie info to track the user.
+body -->  content of requested html page.
+
+

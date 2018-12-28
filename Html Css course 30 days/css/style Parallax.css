@@ -1,0 +1,38 @@
+
+body, html {
+    height: 100%;
+  }
+.parallax1{
+    background: url(../img/img_parallax.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+
+}
+.content{
+    background: lightgrey;
+    height: 200px;
+    
+}
+
+.content p{
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.parallax2{
+    background: url(../img/img_parallax2.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+
+}
+.parallax2 h1{
+    margin-top: 5px;
+}

@@ -1,0 +1,226 @@
+/************************
+*** HEADER ***
+*************************/
+
+header{
+    overflow: hidden;
+    background: white;
+    height: 80px;
+    position: fixed;
+    width: 100%; 
+    border-bottom: 1px solid grey
+}
+
+/************************
+*** WEBSITE LOGO ***
+*************************/
+
+header h1{
+    background: url(../img/logo\ header.png) no-repeat;
+    text-indent: -9999px;
+    height: 80px;
+    float: left;
+}
+/*************************
+*** HEADER NAVIGATION ***
+*************************/
+
+header nav{
+    float: left;
+    margin-top: 30px; 
+}
+
+header nav li{
+    list-style: none;
+    text-align: center;
+}
+
+
+
+header nav li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
+}
+header nav li a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*************************
+*** MAIN CONTENT ***
+*************************/
+
+main{
+    margin-top:100px;
+    clear: both;
+}
+
+.maincontent{
+    padding-top: 50px;
+    padding-bottom: 55px; 
+}
+.grid_24 img{
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px ;
+    height: auto;
+    max-width: 100%;
+}
+
+.grid_24 h1{
+    text-align: center;
+    font-weight: bold;
+    color: #E54C26;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.625rem;
+    margin-bottom: 20px; 
+    line-height: 1.4;
+    padding: .5em 0 0;
+}
+
+p{
+    font-family: 'Charm', cursive;
+}
+.grid_24 p{
+    text-align: center;
+    color: black;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin: 20px;
+}
+
+
+/*************************
+*** PARALLAX IMAGES ***
+*************************/
+#parallax1{
+    background: url(../img/happy_children.jpeg);
+    background-attachment: fixed;
+}
+
+#parallax2{
+    background: url(../img/study_school.jpeg);
+    background-attachment: fixed;
+}
+
+.empty_content{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*************************
+*** RECENT ARTICLES ***
+*************************/
+
+.recentArticles{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.recentArticles h2{
+    text-align: center;
+}
+
+.recentArticles h2 a{
+    font-family: 'Thasadith', sans-serif;
+    text-decoration: none;
+    color:rgba(0,0,0,0.87);
+}
+.recentArticles h2 a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    font-size: 24px;
+    color: black;    
+}
+/* 
+****************
+* READ MORE BUTTON *
+****************
+*/
+
+.button{
+    background: grey;
+    padding: 4px;
+    text-decoration: none;
+    float: right;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.button:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold; 
+}
+
+/*************************
+*** FOOTER ***
+*************************/
+
+footer{
+    
+    height: 300px;
+    text-align: center;
+    border: 2px solid red;
+}
+
+footer h3{
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+
+
+footer section{
+    float: left;
+
+}
+footer aside{
+    float: right;
+}
+
+/*************************
+*** Media Queries ***
+*************************/
+
+@media only screen and (max-width: 601px) {
+    .container_24 .grid_24{
+       width: 100%;
+    }
+
+    .grid_18{
+        width: 70%;
+    }
+
+    .grid_6{
+        width: 30%;
+    }
+
+   .grid8{
+        width: 33%;
+    }
+    
+    .grid3{
+        width: 12.5%;
+    }
+
+    .grid_12{
+        width: 50%;
+    }
+    
+
+    
+}

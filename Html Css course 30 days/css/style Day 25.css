@@ -1,0 +1,35 @@
+.container_12{
+    background: red;
+}
+
+
+header{
+    background: yellow;
+}
+
+nav{
+    background: darkblue;
+}
+nav ul{
+    padding: 0;
+}
+nav li{
+    display: inline;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+aside{
+    background: green;
+}
+.primary{
+    background: grey;
+    clear: both;
+}
+.main{
+    margin: 30px 0px;
+}
+
+section{
+    box-sizing: border-box;
+    padding: 15px;
+}

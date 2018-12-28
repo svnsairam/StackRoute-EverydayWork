@@ -1,0 +1,26 @@
+body{
+    margin: 0; /* to remove little space between box and boundary */
+}
+
+
+.box{
+    width: 400px;
+    height: 400px;
+    background: red;
+    position: relative; /* If we set position to relative then we can specify our own top, left, right , bottom values. */
+    top: 200px;
+    bottom: 50px;
+    right: 0px;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: absolute; /* If we set position to absolute then the box aligns 
+                          its top, left, right , bottom values according to its nearest parent. 
+                         Currently the parent of the green box is browser window */
+     
+     top: 10px;
+     left: 20px;
+     
+}

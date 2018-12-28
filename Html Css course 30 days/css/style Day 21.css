@@ -1,0 +1,84 @@
+body{
+    width: 600px;
+    margin: 20px auto; 
+    font-family: sans-serif;
+}
+h2{
+    font-size: 39px;
+    line-height: 43px;
+}
+a{
+    color: green;
+}
+article img{
+    float: left;
+    margin-right: 30px;
+}
+
+.preview{
+    float: right;
+    width: 370px;
+}
+.meta li{
+    display: inline;
+}
+.meta a, .post_info a{
+    font-style: italic;
+    font-size: 14px;
+}
+.meta li:after{
+    content: '\\';
+    padding: 0px 2px;
+    color: red;
+    text-decoration: none;
+    
+}
+
+
+.meta{
+    padding-left: 0; /* Urls i.e <a> has extra padding by default. So we need to remove that extra padding */
+}
+article h2{
+    margin: 0px; /* headings i.e <h1>,<h2> etc has extra padding by default. So we need to remove that extra padding */
+}
+
+.meta li:last-child:after{
+    content: none;
+}
+
+.post_info{
+    background: brown;
+    color: yellow;
+    padding: 3px;
+    float: left; /* we use floating because the background is set to dispaly as block. We need floating to remove extra space */
+    font-size: 14px;
+}
+
+.post_info a{
+    color: yellow;
+    text-decoration: none;
+}
+.post_info a:hover{ /* When mouse moves over the link */
+    color: black;
+}
+
+.body{
+    clear: both; /* To clear any floats above the paragraph body*/
+    color: grey;
+    font-size: 14px;
+}
+
+.continueClass{
+float: right;
+font-size: 14px;
+}
+
+.continueClass:after{
+    content: ')';
+}
+.continueClass:before{
+    content: '(';
+}
+.continueClass:hover{
+    color: yellow;
+}

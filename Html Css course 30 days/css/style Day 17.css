@@ -1,0 +1,17 @@
+form li{
+    list-style: none;  /* Remove Bullet */ 
+    margin-bottom: 20px;
+}
+
+form ul{
+    padding-left: 0px;
+}
+label{
+display: block;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea{
+    width: 400px;
+    height: 100px;
+}
