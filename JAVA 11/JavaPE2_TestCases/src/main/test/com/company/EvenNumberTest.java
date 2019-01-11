@@ -6,13 +6,13 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class Q5_EvenNumberTest {
+public class EvenNumberTest {
 
-    Q5_EvenNumber testObj;
+    EvenNumber testObj;
 
     @Before
     public void setUp (){
-        testObj = new Q5_EvenNumber();
+        testObj = new EvenNumber();
     }
 
     @After

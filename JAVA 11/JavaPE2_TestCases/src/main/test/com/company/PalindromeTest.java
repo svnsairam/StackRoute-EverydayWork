@@ -6,18 +6,18 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class Q1_PalindromeTest {
+public class PalindromeTest {
 
-    Q1_Palindrome testObj;
+    Palindrome palindrome;
 
     @Before
     public void setUp (){
-        testObj = new Q1_Palindrome();
+        palindrome = new Palindrome();
     }
 
     @After
     public void tearDown(){
-        testObj = null;
+        palindrome = null;
     }
 
 
@@ -25,13 +25,13 @@ public class Q1_PalindromeTest {
     public  void testReveseSuccess(){
 
         String expectedValue = "aabbcbbaa";
-        String actualValue = testObj.reverse("aabbcbbaa");
+        String actualValue = palindrome.reverse("aabbcbbaa");
 
         assertEquals(expectedValue, actualValue);
 
 
         expectedValue = "abcd";
-        actualValue = testObj.reverse("dcba");
+        actualValue = palindrome.reverse("dcba");
 
 
     }
@@ -40,7 +40,7 @@ public class Q1_PalindromeTest {
     public  void testReveseFailure(){
 
         String expectedValue = "abcd";
-        String actualValue = testObj.reverse("acdb");
+        String actualValue = palindrome.reverse("acdb");
 
         assertNotEquals(expectedValue, actualValue);
 
@@ -50,7 +50,7 @@ public class Q1_PalindromeTest {
     public  void testPalindromeSuccess(){
 
         boolean expectedValue = true;
-        boolean actualValue = testObj.isPalindrome(testObj.reverse("aba"));
+        boolean actualValue = palindrome.isPalindrome(palindrome.reverse("aba"));
 
         assertEquals(expectedValue, actualValue);
 
@@ -60,7 +60,7 @@ public class Q1_PalindromeTest {
     public  void testPalindromeFailure(){
 
         boolean expectedValue = true;
-        boolean actualValue = testObj.isPalindrome(testObj.reverse("aba"));
+        boolean actualValue = palindrome.isPalindrome(palindrome.reverse("aba"));
 
         assertNotNull(actualValue);
         assertNotEquals(expectedValue, actualValue);

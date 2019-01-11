@@ -6,24 +6,24 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class Q2_PowerOf4Test {
+public class PowerOf4Test {
 
-    Q2_PowerOf4 testObj;
+    PowerOf4 powerOf4;
 
     @Before
     public void setUp (){
-        testObj = new Q2_PowerOf4();
+        powerOf4 = new PowerOf4();
     }
 
     @After
     public void tearDown(){
-        testObj = null;
+        powerOf4 = null;
     }
 
     @Test
     public void testForCornerCasesZero(){
         boolean expectedValue = false;
-        boolean actualValue = testObj.isPowerOf4(0);
+        boolean actualValue = powerOf4.isPowerOf4(0);
 
         assertEquals(expectedValue,actualValue);
     }
@@ -31,7 +31,7 @@ public class Q2_PowerOf4Test {
     @Test
     public void testNegativeNumbersFailure(){
         boolean expectedValue = false;
-        boolean actualValue = testObj.isPowerOf4(-256);
+        boolean actualValue = powerOf4.isPowerOf4(-256);
 
         assertEquals(expectedValue,actualValue);
     }
@@ -39,7 +39,7 @@ public class Q2_PowerOf4Test {
     @Test
     public void testAsciiCharecterFailure(){
         boolean expectedValue = false;
-        boolean actualValue = testObj.isPowerOf4('@');
+        boolean actualValue = powerOf4.isPowerOf4('@');
 
         assertEquals(expectedValue,actualValue);
     }
@@ -48,7 +48,7 @@ public class Q2_PowerOf4Test {
     @Test
     public void testPowerOfFourSuccess(){
         boolean expectedValue = true;
-        boolean actualValue = testObj.isPowerOf4(16);
+        boolean actualValue = powerOf4.isPowerOf4(16);
 
         assertEquals(expectedValue,actualValue);
 
@@ -57,7 +57,7 @@ public class Q2_PowerOf4Test {
     @Test
     public void testPowerOfFourFailure(){
         boolean expectedValue = false;
-        boolean actualValue = testObj.isPowerOf4(2445);
+        boolean actualValue = powerOf4.isPowerOf4(2445);
 
         assertEquals(expectedValue,actualValue);
     }

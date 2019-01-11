@@ -6,27 +6,27 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class Q6_StudentsAndGradesTest {
+public class StudentsAndGradesTest {
 
-    Q6_StudentsAndGrades testObj;
-    final int no_of_students = 4;
+    StudentsAndGrades studentsAndGrades;
+    final int noOfStudents = 4;
     final int[] grades = {86, 65, 98, 77};
 
     @Before
     public void setUp (){
-        testObj = new Q6_StudentsAndGrades();
+        studentsAndGrades = new StudentsAndGrades();
     }
 
     @After
     public void tearDown(){
-        testObj = null;
+        studentsAndGrades = null;
     }
 
     @Test
     public void testCornerCaseIntergerMaxValue(){
         int expectedValue = 98;
         int grades[] = {Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE};
-        int actualValue = testObj.maximumGrade(no_of_students, grades);
+        int actualValue = studentsAndGrades.maximumGrade(noOfStudents, grades);
 
         assertEquals(expectedValue,actualValue);
     }
@@ -35,7 +35,7 @@ public class Q6_StudentsAndGradesTest {
     public void testAverageGrade(){
         double expectedValue = 81.50;
 
-        double actualValue = testObj.averageGrade(no_of_students, grades);
+        double actualValue = studentsAndGrades.averageGrade(noOfStudents, grades);
 
         assertEquals(expectedValue,actualValue, 0);
     }
@@ -44,7 +44,7 @@ public class Q6_StudentsAndGradesTest {
     public void testMinimumGrade(){
         int expectedValue = 65;
 
-        int actualValue = testObj.maximumGrade(no_of_students, grades);
+        int actualValue = studentsAndGrades.maximumGrade(noOfStudents, grades);
 
         assertEquals(expectedValue,actualValue);
     }
@@ -53,7 +53,7 @@ public class Q6_StudentsAndGradesTest {
     public void testMaximumGrade(){
         int expectedValue = 98;
 
-        int actualValue = testObj.maximumGrade(no_of_students, grades);
+        int actualValue = studentsAndGrades.maximumGrade(noOfStudents, grades);
 
         assertEquals(expectedValue,actualValue);
     }

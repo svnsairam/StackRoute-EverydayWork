@@ -1,6 +1,6 @@
 package com.company;
 
-public class Q6_StudentsAndGrades {
+public class StudentsAndGrades {
 
 
     public double averageGrade(int input, int grades[]){
