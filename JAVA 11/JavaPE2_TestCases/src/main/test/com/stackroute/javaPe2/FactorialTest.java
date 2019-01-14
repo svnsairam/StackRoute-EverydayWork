@@ -1,4 +1,4 @@
-package com.company;
+package com.stackroute.javaPe2;
 
 import org.junit.After;
 import org.junit.Before;
@@ -11,33 +11,32 @@ public class FactorialTest {
     Factorial factorial;
 
     @Before
-    public void setUp (){
+    public void setUp() {
         factorial = new Factorial();
     }
 
     @After
-    public void tearDown(){
+    public void tearDown() {
         factorial = null;
     }
 
 
     @Test
-    public void testCornerCaseFor21(){
-        long    expectedValue = -1;
-        long    actualValue = factorial.factorial(21);
+    public void testCornerCaseFor21() {
+        long expectedValue = -1;
+        long actualValue = factorial.factorial(21);
 
         assertEquals(expectedValue, actualValue);
     }
 
     @Test
-    public void testFactorial(){
+    public void testFactorial() {
 
-        long    expectedValue = 120;
-        long    actualValue = factorial.factorial(5);
+        long expectedValue = 120;
+        long actualValue = factorial.factorial(5);
 
         assertEquals(expectedValue, actualValue);
     }
-
 
 
 }

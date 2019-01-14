@@ -3,22 +3,24 @@ package com.company;
 public class Switch {
 
 
-    private String  switchId;
-    private String  status;
+    private String switchId;
+    private String status;
 
-    public Switch(String switchId, String status){
+    public Switch(String switchId, String status) {
         this.switchId = switchId;
-        this.status   = status;
+        this.status = status;
     }
 
-    public String   getSwitchId(){
+    public String getSwitchId() {
         return this.switchId;
     }
-    public String   getStatus(){
+
+    public String getStatus() {
         return this.status;
     }
-    public void    setStatus(String status){
-        this.status =status ;
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
 

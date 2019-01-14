@@ -1,4 +1,4 @@
-package com.company;
+package com.stackroute.javaPe2;
 
 import org.junit.After;
 import org.junit.Before;
@@ -11,22 +11,22 @@ public class EvenNumberTest {
     EvenNumber testObj;
 
     @Before
-    public void setUp (){
+    public void setUp() {
         testObj = new EvenNumber();
     }
 
     @After
-    public void tearDown(){
+    public void tearDown() {
         testObj = null;
     }
 
     @Test
-    public void testEvenNumberSuccess(){
+    public void testEvenNumberSuccess() {
 
         boolean expectedValue = true;
         boolean actualValue = testObj.isEven(434);
 
-        assertEquals(expectedValue,actualValue);
+        assertEquals(expectedValue, actualValue);
 
         expectedValue = true;
         actualValue = testObj.isEven(-256);
@@ -35,12 +35,12 @@ public class EvenNumberTest {
     }
 
     @Test
-    public void testEvenNumberFailure(){
+    public void testEvenNumberFailure() {
 
         boolean expectedValue = false;
         boolean actualValue = testObj.isEven(25);
 
-        assertEquals(expectedValue,actualValue);
+        assertEquals(expectedValue, actualValue);
     }
 
 }

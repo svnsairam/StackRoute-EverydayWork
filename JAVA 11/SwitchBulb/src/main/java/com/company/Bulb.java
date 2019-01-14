@@ -3,22 +3,23 @@ package com.company;
 public class Bulb {
 
 
-    private String  bulbId;
-    private String  bulbStatus;
+    private String bulbId;
+    private String bulbStatus;
 
-    public Bulb(String bulbId,String bulbStatus){
+    public Bulb(String bulbId, String bulbStatus) {
         this.bulbId = bulbId;
-        this.bulbStatus =   bulbStatus;
+        this.bulbStatus = bulbStatus;
     }
 
-    public String   getSwitchId(){
+    public String getSwitchId() {
         return this.bulbId;
     }
 
-    public String getBulbStatus(){
+    public String getBulbStatus() {
         return this.bulbStatus;
     }
-    public void setBulbStatus(String status){
+
+    public void setBulbStatus(String status) {
         this.bulbStatus = status;
     }
 

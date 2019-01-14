@@ -1,4 +1,4 @@
-package com.company;
+package com.stackroute.javaPe2;
 
 import org.junit.After;
 import org.junit.Before;
@@ -11,18 +11,18 @@ public class PalindromeTest {
     Palindrome palindrome;
 
     @Before
-    public void setUp (){
+    public void setUp() {
         palindrome = new Palindrome();
     }
 
     @After
-    public void tearDown(){
+    public void tearDown() {
         palindrome = null;
     }
 
 
     @Test
-    public  void testReveseSuccess(){
+    public void testReveseSuccess() {
 
         String expectedValue = "aabbcbbaa";
         String actualValue = palindrome.reverse("aabbcbbaa");
@@ -37,7 +37,7 @@ public class PalindromeTest {
     }
 
     @Test
-    public  void testReveseFailure(){
+    public void testReveseFailure() {
 
         String expectedValue = "abcd";
         String actualValue = palindrome.reverse("acdb");
@@ -47,7 +47,7 @@ public class PalindromeTest {
     }
 
     @Test
-    public  void testPalindromeSuccess(){
+    public void testPalindromeSuccess() {
 
         boolean expectedValue = true;
         boolean actualValue = palindrome.isPalindrome(palindrome.reverse("aba"));
@@ -57,7 +57,7 @@ public class PalindromeTest {
     }
 
     @Test
-    public  void testPalindromeFailure(){
+    public void testPalindromeFailure() {
 
         boolean expectedValue = true;
         boolean actualValue = palindrome.isPalindrome(palindrome.reverse("aba"));
@@ -66,7 +66,6 @@ public class PalindromeTest {
         assertNotEquals(expectedValue, actualValue);
 
     }
-
 
 
 }
